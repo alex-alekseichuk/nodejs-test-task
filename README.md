@@ -28,7 +28,3 @@ What I will be looking at the code:
 npm i
 npm run test
 ```
-
-### Usage
-
-TODO
