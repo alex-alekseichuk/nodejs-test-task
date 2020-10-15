@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-alekseichuk/nodejs-test-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alex-alekseichuk/nodejs-test-task/issues"
+  },
+  "homepage": "https://github.com/alex-alekseichuk/nodejs-test-task#readme",
+  "dependencies": {
+    "node-xml-stream": "^1.0.2"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3"
+  }
+}
