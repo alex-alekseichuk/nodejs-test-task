@@ -29,10 +29,12 @@ const calls = [
   }]
 ];
 
-test('FileDump parser should parse correctly CodeTest-XML.xml example', async () => {
-  const parse = require('./index')(logger, db);
-  await parse('./CodeTest-XML.xml');
-  expect(logger.error.mock.calls.length).toBe(0);
-  expect(db.save.mock.calls.length).toBe(4);
-  expect(db.save.mock.calls).toEqual(calls);
+describe('FileDump parser', () => {
+  it('should parse correctly CodeTest-XML.xml example', async () => {
+    const parse = require('./index')(logger, db);
+    await parse('./CodeTest-XML.xml');
+    expect(logger.error.mock.calls.length).toBe(0);
+    expect(db.save.mock.calls.length).toBe(4);
+    expect(db.save.mock.calls).toEqual(calls);
+  });
 });
